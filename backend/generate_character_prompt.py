@@ -1,7 +1,7 @@
 # ✅ 라이브러리 불러오기
 import os
 import json
-from species_summary_generator import get_or_generate_species_summary
+# from species_summary_generator import get_or_generate_species_summary
 import datetime
 
 # ✅ 경로 설정
@@ -41,7 +41,8 @@ def get_species_data(species_name):
             return entry  # 전체 반환
     # ✅ 없으면 생성
     print(f"⚠️ 종족 '{species_name}' 없음 → 새로 생성합니다")
-    return get_or_generate_species_summary(species_name)
+    return
+    # return get_or_generate_species_summary(species_name)
 
 # ✅ MBTI 정보 불러오기 (리스트 탐색 기반)
 def get_mbti_data(mbti_type):

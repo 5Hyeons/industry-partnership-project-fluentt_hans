@@ -3,11 +3,11 @@ import os
 import re
 import json
 from dotenv import load_dotenv
-from openai import OpenAI
+# from openai import OpenAI
 
 # ✅ 환경 변수 로드
 load_dotenv(os.path.join(os.path.abspath(".."), ".env"))
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # ✅ 경로 설정
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))  # 현재 파일 기준으로 고정
