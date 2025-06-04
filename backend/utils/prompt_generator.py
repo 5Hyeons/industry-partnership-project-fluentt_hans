@@ -1,6 +1,6 @@
 from typing import Dict, Any
 from .supabase_client import supabase
-from .species_table import process_species
+# from .species_table import process_species
 import json
 
 def get_mbti_info(mbti_type: str) -> Dict[str, Any]:
@@ -32,7 +32,7 @@ def ensure_species_info(species_name: str) -> Dict[str, Any]:
     info = get_species_info(species_name)
     if not info:
         print(f"⚠️ {species_name} 종족 정보가 없습니다. 새로 생성합니다...")
-        process_species(species_name)
+        # process_species(species_name)
         info = get_species_info(species_name)
     return info
 
