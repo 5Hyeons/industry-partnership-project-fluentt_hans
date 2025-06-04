@@ -1,0 +1,31 @@
+# ✅ LiveKit & Voice Agent
+livekit-agents[cartesia,deepgram,openai,silero,turn-detector,mcp]~=1.0
+livekit-plugins-noise-cancellation~=0.2
+
+# ✅ LLM & TTS & STT
+openai>=1.3.9               # GPT + TTS
+transformers==4.47.1        # Turn Detector 호환 최댓값
+
+# ✅ Audio / Speech
+scikit-learn==1.3.1
+scipy==1.11.1
+numpy==1.26.0
+
+# ✅ Supabase & HTTP
+supabase==2.15.2
+httpx==0.28.1               # Supabase, PostgREST, Storage3 충돌 방지
+
+# ✅ Streamlit App
+streamlit==1.45.1
+python-dotenv
+
+# ✅ 기타 유틸리티
+wikipedia
+deep-translator
+
+# ✅ Progress / Dev Tools
+tqdm
+datasets>=2.0.0
+
+# ✅ For unity sdk
+librosa

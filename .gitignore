@@ -1,0 +1,4 @@
+.env
+\backend\data\species\namuwiki_species.json
+__pycache__/
+*.pyc
